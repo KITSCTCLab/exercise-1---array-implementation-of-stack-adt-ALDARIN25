@@ -12,7 +12,7 @@ class Stack:
 
     def push(self, data):
         if not self.is_full():
-            self.item.push(data)         
+            self.item.append(data)         
 
     def pop(self):
         if not self.is_empty():
