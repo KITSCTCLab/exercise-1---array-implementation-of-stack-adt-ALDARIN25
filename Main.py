@@ -5,21 +5,21 @@ class Stack:
         self.size = size
 
     def is_empty(self):
-       return len(self.items)==0
+        return len(self.items)==0
 
     def is_full(self):
-       return len(self.item)==self.size
+       return len(self.items)==self.size
 
     def push(self, data):
         if not self.is_full():
-            self.item.append(data)         
+            self.items.append(data)
 
     def pop(self):
         if not self.is_empty():
-            self.item.pop(-1)
+            self.items.pop(-1)
 
     def status(self):
-       for element in self item:
+       for element in self.items:
         print(element)
 
 # Do not change the following code
